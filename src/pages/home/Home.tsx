@@ -3,7 +3,7 @@ import { Skeleton, Button, Text, Stack, Accordion, HStack, Spinner } from '@chak
 import { useSelector } from "react-redux"
 import { fetchUser, RootState, postUser } from "../../store"
 import { useThunk } from "../../hooks/use-thunk"
-import { SingleAccordItem } from "../../components/accordItem/SingleAccordItem"
+import { SingleAccordItem } from "../../components/accordItem/MultipleAccordItem"
 
 export default function Home() {
   const [doFetchUser, isLoadingUser, errorUser] = useThunk(fetchUser)
@@ -41,7 +41,7 @@ export default function Home() {
 
         </Button>
       </HStack>
-      <Accordion allowToggle  >
+      <Accordion allowMultiple  >
         <Skeleton isLoaded={!isLoadingUser}>
           <Stack spacing="3" >
 

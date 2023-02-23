@@ -27,8 +27,68 @@
     {
       "name": "Destiney",
       "id": "d0d889ab-1ccf-4e3a-a608-a5b4426b8c43"
+    },
+    {
+      "name": "Henry",
+      "id": "581d431e-ee52-45d3-a2fa-6e1ce71c7a83"
+    },
+    {
+      "name": "Presley",
+      "id": "6e3269bf-0261-4e02-8f96-764d4ce840da"
     }
   ],
-  "albums": {},
-  "photos": []
+  "albums": [
+    {
+      "userId": "70c02220-f668-4ad5-9173-bbb4d921f560",
+      "title": "Rustic Soft Cheese",
+      "id": "3528-aQ"
+    },
+    {
+      "userId": "70c02220-f668-4ad5-9173-bbb4d921f560",
+      "title": "Oriental Wooden Hat",
+      "id": "a92ilBN"
+    },
+    {
+      "userId": "66a6402f-3f36-4bd4-b253-447faf7fd935",
+      "title": "Licensed Concrete Shirt",
+      "id": "ie475m1"
+    },
+    {
+      "userId": "70c02220-f668-4ad5-9173-bbb4d921f560",
+      "title": "Generic Wooden Bike",
+      "id": "LNpZCQs"
+    },
+    {
+      "userId": "66a6402f-3f36-4bd4-b253-447faf7fd935",
+      "title": "Oriental Frozen Hat",
+      "id": "E3w9UCE"
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://loremflickr.com/100/100/abstract?lock=41241",
+      "albumId": "3528-aQ",
+      "id": 3
+    },
+    {
+      "url": "https://loremflickr.com/100/100/abstract?lock=73588",
+      "albumId": "3528-aQ",
+      "id": 4
+    },
+    {
+      "url": "https://loremflickr.com/100/100/abstract?lock=34106",
+      "albumId": "3528-aQ",
+      "id": 6
+    },
+    {
+      "url": "https://loremflickr.com/100/100/abstract?lock=44963",
+      "albumId": "3528-aQ",
+      "id": 7
+    },
+    {
+      "url": "https://loremflickr.com/100/100/abstract?lock=83566",
+      "albumId": "E3w9UCE",
+      "id": 8
+    }
+  ]
 }
