@@ -1,14 +1,14 @@
 # Media
-Pequena aplicacao com possibilidade de inserir nome do usuario,sua play list ,imagem da playlist
+Pequena aplicação com possibilidade de inserir nome do usuário,seu playList e imagem da playlist
 
-## Motivacao 
+## Motivação 
 Entender do uso de Redux Thunks e Redux Toolkit Query
 
 
 ## Feature
-- Para usar o thunk melhor estrategia e retornar o  valor da api dentro da constante que esta instanciando o asynThunk
-- Quando nao retorna nada da API o ideal e retornar o valor que estamos recebendo como argumento
-- Motivo de fazer isso e porque precisamos no momento de criar os builders o argumento no action.payload
+- Para usar o thunk melhor estrategia e retornar o valor da API dentro da constante que esta instanciando o asynThunk
+- Quando não retorna nada da API o ideal e retornar o valor que estamos recebendo como argumento
+- Motivo de fazer isso porque precisamos no momento de criar os builders o argumento no action.payload
 - Abaixo um exemplo do uso de thunks
 
 
@@ -117,9 +117,9 @@ useEffect(() =>{
 ```
 
 ## 
-- Para facilitar o uso de thunk creie um hook
-- Quando desejemaos pegar o retornor da promise do thunk usamos o unwrap
-- Sem ele possivelmente ira falhar conseguir pegar o retorno da promise apos ela ser concluida
+- Para facilitar o uso de thunk criei um hook
+- Quando desejamos pegar o retorno da promise do thunk usamos o unwrap
+- Sem ele possivelmente ira falhar se tentar pegar o retorno da promise apos ela ser concluída
 
 ```typescript
 import { useState } from "react"
@@ -217,12 +217,12 @@ export default function Home() {
 
 ##
 - Outra possibilidade e trabalhar usando Redux Toolkit Query
-- Com ele conseguimos cachear nossos dados e quem adminstra caso esteja obseleto ou nao e proprio redux
-- Redux usa o reducerPath como chave para se identifcar das outras chamadas
-- para garantir que nao havera erro de digitacao pode usar assinatura abaixo que e com array
-- Com tags determinamos quando atualizar manualmente quando acontece um mutation
+- Com ele conseguimos cachear nossos dados e quem administra caso esteja obseleto ou não é próprio redux
+- Redux usa o reducerPath como chave para se identificar das outras chamadas
+- Para garantir que não haverá erro de digitação pode usar assinatura abaixo que e com array
+- Com tags determinamos quando atualizar manualmente, quando acontece um mutation
 - Reapara na abordagem o valor que recebo no argumento da query e mesmo que temos no invalidateTags e providersTags
-- Resumindo o results do invalidateTags ou providersTags e o retorno caso a requisicao seja sucesso e o ultimo argumetno e  o passado na query
+- Resumindo o results do invalidateTags ou providersTags é o retorno caso a requisição seja sucesso e o último argumento e o passado na query
 - Para typescript preciso dizer o tipo do tagTypes
 
 
@@ -348,7 +348,7 @@ const { isLoading: isLoadingAlbumQuery, data: dataAlbumQuery, error: errorAlbumQ
 ```
 ##
 - Cuidados que precisa tomar 
-- Caso deseja realizar um filtro nao pode simplesemente filtrar a lista,pois sera a referencia do nosso arrray pra alterar de fato alem de realizar o filtro precisamos dizer que o data sera a lista filtrada,como exemplo abaixo
+- Caso deseja realizar um filtro não pode simplesmente filtrar a lista, pois sera a referência do nosso arrray para alterar de fato, além de realizar o filtro precisamos dizer que o data sera a lista filtrada, como exemplo abaixo
 - Com state.data garanto que sera atualizado
 
 ```typescript
